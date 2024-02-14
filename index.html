@@ -10,16 +10,92 @@
     <!-- Add css file -->
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body >
-  <section class="home">
+<body class="poppins-font">
+    <main class="min-h-screen bg-[#1E1E1E] bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- Home page start -->
+        <section class="home text-[white] flex flex-col min-h-screen gap-11 justify-center items-center ">
+            <h1 class="text-9xl uppercase anton-font">ALPHABET CLASH</h1>
+            <p class="">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button class="btn bg-[white]  hover:bg-[#e7e7e7] text-[black] px-8 border-none text-2xl">Play Now</button>
+        </section>
+        <!-- Home page end -->
+        <!-- Play ground start -->
+        <section class="play-ground min-h-screen flex flex-col justify-center gap-12 hidden">
+            <div class="display">
+                <div class="artboard artboard-horizontal phone-6 border-[16px] rounded-2xl border-[#010313CC] mx-auto bg-[#ffffffb3]">
+                    <div class="flex justify-center">
+                        <p class="bg-[#2F2941] px-5 pb-2 text-[white] rounded-b-md">Don't watch keyboard  while playing...</p>
+                        
+                    </div>
+                    <div class="flex justify-center  h-[80%] items-center">
+                        <p class="text-9xl text-black">Y</p>
+                    </div>
+                </div>
+                
 
-  </section>
-  <section class="play-ground">
+            </div>
+            <div class="keybord">
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                  </div>
+            </div>
+            <div class="lifeScore w-[80%] flex justify-between mx-auto">
+                <button class="btn bg-[#894189] rounded-full text-[white]">
+                    <p>Life</p>
+                    <img src="images/love.png" alt="">
+                    <p>1</p>
+                  </button>
+                <button class="btn bg-[#360490] rounded-full text-[white]">
+                    <p>Score</p>
+                    <img src="images/dolar.png" alt="">
+                    <p>1</p>
+                  </button>
+            </div>
+        </section>
+        <!-- Play ground end -->
+        <!-- Score section start -->
+        <section class="score flex  flex-col justify-center items-center text-center min-h-screen text-white hidden">
+            <div class="gradiant p-6">
+                <h1 class="text-6xl font-extrabold">Score :
+                    <span>14</span>
+                </h1>
+                <button class="btn bg-[white] border-none text-xl my-5 text-black hover:bg-[#cfcece]">Play Again</button>
+                <p>Practice will make you Pro</p>
 
-  </section>
-  <section class="score">
-    
-  </section>
+            </div>
+        </section>
+        <!-- Score section end -->
+    </main>
     
 </body>
 </html>
