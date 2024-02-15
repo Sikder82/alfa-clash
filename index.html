@@ -13,14 +13,14 @@
 <body class="poppins-font">
     <main class="min-h-screen bg-[#1E1E1E] bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- Home page start -->
-        <section class="home text-[white] flex flex-col min-h-screen gap-11 justify-center items-center ">
+        <section id="home-screen" class="text-[white] flex flex-col min-h-screen gap-11 justify-center items-center ">
             <h1 class="text-9xl uppercase anton-font">ALPHABET CLASH</h1>
             <p class="">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn bg-[white]  hover:bg-[#e7e7e7] text-[black] px-8 border-none text-2xl">Play Now</button>
+            <button onclick="playNow()" class="btn bg-[white]  hover:bg-[#e7e7e7] text-[black] px-8 border-none text-2xl">Play Now</button>
         </section>
         <!-- Home page end -->
         <!-- Play ground start -->
-        <section class="play-ground min-h-screen flex flex-col justify-center gap-12 hidden">
+        <section id="play-screen" class="play-ground min-h-screen flex flex-col justify-center gap-12 hidden">
             <div class="display">
                 <div class="artboard artboard-horizontal phone-6 border-[16px] rounded-2xl border-[#010313CC] mx-auto bg-[#ffffffb3]">
                     <div class="flex justify-center">
@@ -96,6 +96,8 @@
         </section>
         <!-- Score section end -->
     </main>
+    <script src="js/utility.js"></script>
+    <script src="js/alfa.js"></script>
     
 </body>
 </html>
