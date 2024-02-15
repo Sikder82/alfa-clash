@@ -1,3 +1,11 @@
+
+function continueGame(){
+    const getAlfa= getARandomAlfabates();
+    setBackgroundColor(getAlfa);
+    const setDisplay = document.getElementById('display-screen');
+    setDisplay.innerText = getAlfa.toUpperCase();
+}
+
 function playNow(){
     // const homeSection = document.getElementById('home-screen').classList;
     // homeSection.add('hidden');
@@ -5,4 +13,5 @@ function playNow(){
     // playSection.remove('hidden');
     hideElementById('home-screen');
     showElementById('play-screen');
+    continueGame();
 }
