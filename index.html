@@ -73,23 +73,23 @@
                 <button class="btn bg-[#894189] rounded-full text-[white]">
                     <p>Life</p>
                     <img src="images/love.png" alt="">
-                    <p>1</p>
+                    <p id="life-time">5</p>
                   </button>
                 <button class="btn bg-[#360490] rounded-full text-[white]">
                     <p>Score</p>
                     <img src="images/dolar.png" alt="">
-                    <p>1</p>
+                    <p id="Score">0</p>
                   </button>
             </div>
         </section>
         <!-- Play ground end -->
         <!-- Score section start -->
-        <section class="score flex  flex-col justify-center items-center text-center min-h-screen text-white hidden">
+        <section id="final-score-screen" class="score flex  flex-col justify-center items-center text-center min-h-screen text-white hidden">
             <div class="gradiant p-6">
                 <h1 class="text-6xl font-extrabold">Score :
-                    <span>14</span>
+                    <span id="final-score">14</span>
                 </h1>
-                <button class="btn bg-[white] border-none text-xl my-5 text-black hover:bg-[#cfcece]">Play Again</button>
+                <button onclick="playAgain()" class="btn bg-[white] border-none text-xl my-5 text-black hover:bg-[#cfcece]">Play Again</button>
                 <p>Practice will make you Pro</p>
 
             </div>
