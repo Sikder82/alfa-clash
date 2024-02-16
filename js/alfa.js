@@ -4,9 +4,10 @@ function handleKeyboardBtnPress(event){
     if( pressKey === displayKey.toLowerCase()){
         updateScore();
         continueGame();
-        removeBackgroundColor(pressKey)
+        removeBackgroundColor(pressKey);
     }else{
-        updateLifeTime();  
+        updateLifeTime();
+        removeBackgroundColor(pressKey);  
     }
 
 }

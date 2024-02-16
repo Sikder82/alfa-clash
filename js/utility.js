@@ -34,8 +34,10 @@ function updateLifeTime(){
     if(setLifeTime === 0){
         hideElementById('play-screen');
         const finalScore = document.getElementById('final-score');
-        const score = document.getElementById('Score').innerText;
-        finalScore.innerText = score;
+        const score = document.getElementById('Score');
+        finalScore.innerText = score.innerText;
+        score.innerText = 0;
+        lifeTime.innerText = 5;
         showElementById('final-score-screen');
     }   
 }
