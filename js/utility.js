@@ -2,6 +2,13 @@ function hideElementById(elementId){
     const element= document.getElementById(elementId);
     element.classList.add('hidden');
 }
+function resetScoreLife(){
+    const lifeTime = document.getElementById('life-time');
+    const score = document.getElementById('Score');
+    score.innerText = 0;
+    lifeTime.innerText = 5;
+}
+
 function showElementById(elementId){
     const element= document.getElementById(elementId);
     element.classList.remove('hidden');
@@ -29,16 +36,16 @@ function updateScore(){
 }
 function updateLifeTime(){
     const lifeTime = document.getElementById('life-time');
+    const displayKey = document.getElementById('display-screen').innerText; 
     const setLifeTime=(parseInt(lifeTime.innerText))-1;
     lifeTime.innerText=setLifeTime;
     if(setLifeTime === 0){
+        console.log(displayKey.toLowerCase())
         hideElementById('play-screen');
+        removeBackgroundColor(displayKey.toLowerCase());
         const finalScore = document.getElementById('final-score');
         const score = document.getElementById('Score');
         finalScore.innerText = score.innerText;
-        score.innerText = 0;
-        lifeTime.innerText = 5;
         showElementById('final-score-screen');
     }   
 }
-

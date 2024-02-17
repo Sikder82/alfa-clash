@@ -7,7 +7,6 @@ function handleKeyboardBtnPress(event){
         removeBackgroundColor(pressKey);
     }else{
         updateLifeTime();
-        removeBackgroundColor(pressKey);  
     }
 
 }
@@ -22,8 +21,10 @@ function continueGame(){
 
 function playNow(){
     hideElementById('home-screen');
+    resetScoreLife();
     showElementById('play-screen');
     continueGame();
+
 }
 
 function playAgain(){
