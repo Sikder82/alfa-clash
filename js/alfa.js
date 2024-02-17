@@ -3,8 +3,8 @@ function handleKeyboardBtnPress(event){
     const displayKey = document.getElementById('display-screen').innerText;
     if( pressKey === displayKey.toLowerCase()){
         updateScore();
-        continueGame();
         removeBackgroundColor(pressKey);
+        continueGame();
     }else{
         updateLifeTime();
     }
